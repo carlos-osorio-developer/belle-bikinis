@@ -35,11 +35,47 @@ $secondfont-medium: "HelveticaNeueMedium";
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+.sm-txt {
+    font-size: 12px;
+}
+
+.xl-txt {
+    font-size: 22px;
+}
+
+.xxl-txt {
+    font-size: 40px;
+}
+
+body {
+    font-family: $secondfont-medium;
+}
+
 .blackdarkbg {
     background-color: $black-dark;
+    height: 60px;    
+}
+
+.pink {
+    color: $maincolor;
 }
 
 header {
-    background-color: $maincolor;
-    
+    background-color: $maincolor;   
+
+    .navbar {
+        img{
+            width: 50px;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+    }
 }
+
+@import 'queries';
