@@ -39,6 +39,20 @@
   display: swap;
 }
 
+/* Inheritance */
+.item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* General styles */
 * {
   padding: 0;
@@ -63,8 +77,23 @@ a {
   font-size: 40px;
 }
 
+h1 {
+  font-family: "GothamBold";
+}
+
+h2 {
+  font-family: "GothamLight";
+}
+
+.strong-txt {
+  font-family: "HelveticaNeueBold";
+  color: #383838;
+}
+
 body {
   font-family: "HelveticaNeueMedium";
+  color: #383838;
+  background-color: #e0e0e0;
 }
 
 .blackdarkbg {
@@ -74,6 +103,10 @@ body {
 
 .pink {
   color: #d35266;
+}
+
+.pink-bg {
+  background-color: #d35266;
 }
 
 header {
@@ -86,6 +119,21 @@ header .navbar img {
 
 header .navbar li {
   margin: 0 10px;
+}
+
+/* Hots ads ===================== */
+#carouselHotAds {
+  background-color: #fff;
+}
+
+.hotAds-img {
+  width: 200px;
+}
+
+/* Items categories ================ */
+.item-prev {
+  border: #888888 solid 1px;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {

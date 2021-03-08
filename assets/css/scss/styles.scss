@@ -27,6 +27,14 @@ $secondfont-medium: "HelveticaNeueMedium";
 @include font-face($secondfont-light);
 @include font-face($secondfont-medium);
 
+/* Inheritance */
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
 /* General styles */
 
 * {
@@ -51,8 +59,23 @@ a {
     font-size: 40px;
 }
 
+h1 {
+    font-family: $mainfont-bold;
+}
+
+h2 {
+    font-family: $mainfont-light;
+}
+
+.strong-txt {
+    font-family: $secondfont-bold;
+    color: $black-dark;
+}
+
 body {
     font-family: $secondfont-medium;
+    color: $black-dark;
+    background-color: #e0e0e0;
 }
 
 .blackdarkbg {
@@ -62,6 +85,10 @@ body {
 
 .pink {
     color: $maincolor;
+}
+
+.pink-bg {
+    background-color: $maincolor;
 }
 
 header {
@@ -76,6 +103,24 @@ header {
             margin: 0 10px;
         }
     }
+}
+
+/* Hots ads ===================== */
+
+#carouselHotAds {
+    background-color: #fff;
+}
+
+.hotAds-img {
+    width: 200px;
+}
+
+/* Items categories ================ */
+
+.item-prev {
+    border: $light-dark solid 1px;
+    background-color: #fff;
+    @extend %flex-column;
 }
 
 @import 'queries';
