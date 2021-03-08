@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/69c8e727d8.js" crossorigin="anonymous"></script>
     <title>Belle Bikinis online shop</title>
 </head>
 <body>
     <header>
-        <div class="container-fluid blackdarkbg">
+        <nav class="navbar container-fluid jus justify-content-md-start flex-nowrap blackdarkbg">
             <a href="./index.html"><img src="./assets/img/logowhite.png" alt="white logo"></a>
-        </div>
-    </header>    
+            <div class="d-flex justify-content-between ps-3 full-width">
+                <ul class="navbar-nav list-unstyled list-group-horizontal align-items-center">
+                    <li class="nav-link active"><a href="#" class="text-muted"><i class="fas fa-home"></i><span class="d-none d-sm-inline"> HOME</span></a></li>
+                    <li class="nav-link"><a href="#" class="text-muted"><i class="fa fa-archive"></i><span class="d-none d-sm-inline"> COLLECTIONS</span></a></li>
+                    <li class="nav-link"><a href="#" class="text-muted"><i class="fas fa-shopping-cart"></i><span class="d-none d-sm-inline"> PURCHASE LIST</span></a></li>
+                </ul>
+                <ul class="d-none d-md-flex navbar-nav list-unstyled list-group-horizontal align-items-center">
+                    <li class="nav-link position-relative"><a href="#" class="text-muted"><i class="far fa-envelope"></i><span class="position-absolute top-0 start-50 badge rounded-circle bg-danger">3</span></a></li>
+                    <li class="nav-link"><a href="#" class="text-muted">John Doe <img src="./assets/img/user.jpg" alt="John Doe" class="rounded-circle"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <h1 class="text-muted">Hot Ads</h1>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <img src="./assets/img/item4.jpg" class="d-block mx-auto w-50" alt="red bikini">                    
+              </div>
+              <div class="carousel-item">                
+                    <img src="./assets/img/item4-2.jpg" class="d-block mx-auto w-50" alt="red bikini2">                
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <i class="fas fa-chevron-left pink xxl-txt" aria-hidden="true"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next pink" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <i class="fas fa-chevron-right pink xxl-txt" aria-hidden="true"></i>
+              <span class="visually-hidden pink">Next</span>
+            </button>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
