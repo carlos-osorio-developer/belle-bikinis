@@ -1,0 +1,45 @@
+/* Variables */
+
+$maincolor: #d35266;
+$light-dark: #888888;
+$black-dark: #383838;
+$mainfont-bold: "GothamBold";
+$mainfont-light: "GothamLight";
+$secondfont-bold: "HelveticaNeueBold";
+$secondfont-light: "HelveticaNeueLight";
+$secondfont-medium: "HelveticaNeueMedium";
+
+// Fonts
+
+@mixin font-face($font-family) {
+    @font-face {
+        font-family: $font-family;
+        src: url(../fonts/#{$font-family}.otf);
+        font-weight: normal;
+        font-style: normal;
+        display: swap;
+    }
+}
+
+@include font-face($mainfont-bold);
+@include font-face($mainfont-light);
+@include font-face($secondfont-bold);
+@include font-face($secondfont-light);
+@include font-face($secondfont-medium);
+
+/* General styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blackdarkbg {
+    background-color: $black-dark;
+}
+
+header {
+    background-color: $maincolor;
+    
+}
