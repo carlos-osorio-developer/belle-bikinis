@@ -1,0 +1,46 @@
+/* Variables */
+@font-face {
+  font-family: "GothamBold";
+  src: url(../fonts/GothamBold.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+@font-face {
+  font-family: "GothamLight";
+  src: url(../fonts/GothamLight.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url(../fonts/HelveticaNeueBold.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url(../fonts/HelveticaNeueLight.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url(../fonts/HelveticaNeueMedium.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap; }
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #d35266;
+  font-family: "HelveticaNeueBold";
+  font-size: 20px; }
+  header p {
+    font-family: "HelveticaNeueMedium";
+    font-size: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
