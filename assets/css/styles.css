@@ -41,7 +41,7 @@
 
 /* Inheritance */
 .carousel-container, .item-prev, .footer-nav,
-.copyright, .search-product {
+.copyright, .user-options, .search-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,10 +132,22 @@ header .searchbar {
   margin: 0 5px;
 }
 
+header .text-muted:hover {
+  color: #eeeeee !important;
+}
+
 /* Hots ads ===================== */
 #carouselHotAds {
   margin-top: 114px;
   background-color: #fff;
+}
+
+#carouselHotAds .pink:hover {
+  color: #d62741;
+}
+
+.carousel-button {
+  width: auto;
 }
 
 .hotAds-img {
@@ -143,6 +155,10 @@ header .searchbar {
 }
 
 /* Items categories ================ */
+.text-dark h3:hover {
+  color: #808080;
+}
+
 .item-prev {
   border: #888888 solid 1px;
   background-color: #fff;
@@ -166,6 +182,18 @@ footer h4 {
   border-bottom: #d35266 solid 2px;
 }
 
+footer .pink:hover {
+  color: #d62741;
+}
+
+.user-options-item {
+  width: 150px;
+}
+
+.user-options {
+  height: 200px;
+}
+
 /* checklist ================== */
 #checklist {
   margin-top: 114px;
@@ -181,6 +209,11 @@ footer h4 {
       -ms-flex: 1 1 150px;
           flex: 1 1 150px;
   margin: 0 auto;
+}
+
+/* items-list ================== */
+.search-product .pink:hover {
+  color: #d62741;
 }
 
 .hotAds-img {

@@ -11,8 +11,14 @@
     }    
 }
 
+/* items-list ================== */
+
 .search-product {
-    @extend %flex-column;    
+    @extend %flex-column;   
+    
+    .pink:hover {
+        color: #d62741;
+    }
 }
 
 .hotAds-img {

@@ -114,6 +114,10 @@ header {
         width: 200px;
         margin: 0 5px;
     }
+
+    .text-muted:hover {
+        color: rgb(238, 238, 238)!important;
+    }    
 }
 
 /* Hots ads ===================== */
@@ -121,6 +125,14 @@ header {
 #carouselHotAds {
     margin-top: 114px;
     background-color: #fff;
+
+    .pink:hover {
+        color: #d62741;
+    }
+}
+
+.carousel-button {
+    width: auto;
 }
 
 .carousel-container {
@@ -132,6 +144,10 @@ header {
 }
 
 /* Items categories ================ */
+
+.text-dark h3:hover {
+    color:#808080;
+}
 
 .item-prev {
     border: $light-dark solid 1px;
@@ -154,11 +170,24 @@ footer {
         text-align: center;
         border-bottom: $maincolor solid 2px;
     }
+
+    .pink:hover {
+        color: #d62741;
+    }
+}
+
+.user-options-item {
+    width: 150px;
 }
 
 .footer-nav,
 .copyright {
     @extend %flex-column;
+}
+
+.user-options {
+    @extend %flex-column;
+    height: 200px;
 }
 
 @import 'search';
