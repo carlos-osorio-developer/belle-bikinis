@@ -12,5 +12,10 @@
 }
 
 .search-product {
-    @extend %flex-column;
+    @extend %flex-column;    
+}
+
+.hotAds-img {
+    max-width: 300px;
+    width: 90%;
 }

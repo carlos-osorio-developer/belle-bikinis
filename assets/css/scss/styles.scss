@@ -112,7 +112,7 @@ header {
 
     .searchbar {
         width: 200px;
-        margin: auto;
+        margin: 0 5px;
     }
 }
 
@@ -128,7 +128,7 @@ header {
 }
 
 .hotAds-img {
-    width: 200px;
+    width: 300px;
 }
 
 /* Items categories ================ */
@@ -137,6 +137,12 @@ header {
     border: $light-dark solid 1px;
     background-color: #fff;
     @extend %flex-column;
+    justify-content: space-between;
+}
+
+.dropdown-item:hover {
+    background-color: #333333;
+    color: #fff;
 }
 
 /* Footer ================ */
