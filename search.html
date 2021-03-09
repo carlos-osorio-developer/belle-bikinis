@@ -123,8 +123,23 @@
                 </div>
             </div>
             <div class="search-product py-3 px-md-3 my-2 border-bottom border-top border-secondary flex-md-row">
-                <a href="#"><img src="./assets/img/item4.jpg" class="d-block hotAds-img me-3" alt="red bikini"></a>
-                <div class="py-2">
+                <div id="Searchbikini" class="carousel slide hotAds-img">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><a href="#"><img class="hotAds-img" src="./assets/img/item4.jpg" alt="red bikini"></a></div>
+                        <div class="carousel-item"><a href="#"><img class="hotAds-img" src="./assets/img/item4-2.jpg" alt="red bikini2"></a></div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0">
+                        <button class="bg-secondary border-0 p-1" type="button" data-bs-target="#Searchbikini"
+                          data-bs-slide="prev">
+                          <i class="fas fa-chevron-left pink xl-txt" aria-hidden="true"></i>
+                        </button>
+                        <button class="bg-secondary border-0 p-1" type="button"
+                          data-bs-target="#Searchbikini" data-bs-slide="next">
+                          <i class="fas fa-chevron-right pink xl-txt" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="py-2 ps-3">
                     <a href="#"><h2 class="pink">Maaji Mango Frisky Single Strap Bikini</h2></a>
                     <p>WOMENS BIKINI TWO PIECES 79% POLYAMIDE 21% SPANDEX KNIT</p>
                     <div class="d-flex justify-content-between">                        
@@ -200,10 +215,39 @@
                     <li class="nav-link"><a class="text-dark" href="index.html">FAQ</a></li>
                     <li class="nav-link"><a class="text-dark" href="index.html">HELP</a></li>
                 </ul>
-            </div>        
+            </div>
+            <div class="user-options ps-3 container-fluid d-none d-lg-flex align-items-lg-start justify-content-center col-md-3">
+                <div class="w-100 d-flex align-items-center justify-content-between">
+                    <strong>Country: </strong>
+                    <select class="user-options-item form-select d-none d-md-block searchbar" aria-label="Default select example">
+                        <option selected>U.S.</option>
+                        <option value="1">Spain</option>
+                        <option value="2">Mexico</option>
+                        <option value="3">Germany</option>
+                    </select>
+                </div>
+                <div class="w-100 d-flex align-items-center justify-content-between">
+                    <strong>Language: </strong>
+                    <select class="user-options-item form-select d-none d-md-block searchbar" aria-label="Default select example">
+                        <option selected>English</option>
+                        <option value="1">Spanish</option>
+                        <option value="2">Arabic</option>
+                        <option value="3">Portuguese</option>
+                    </select>
+                </div>
+                <div class="w-100 d-flex align-items-center justify-content-between">
+                    <strong>Currency: </strong>
+                    <select class="user-options-item form-select d-none d-md-block searchbar" aria-label="Default select example">
+                        <option selected>U.S. Dollar $</option>
+                        <option value="1">Euro €</option>
+                        <option value="2">Mexican Pesos</option>
+                        <option value="3">Reales</option>
+                    </select>
+                </div>
+            </div>
         </nav>
-        <section class="copyright d-md-flex flex-md-row justify-content-md-between align-items-md-baseline">
-            <p class="sm-txt">Copyright© 2015 BelleBikinis.com. All Rights Reserved. Designed by Mohammed Awad.</p>
+        <section class="copyright d-md-flex flex-md-row justify-content-md-between align-items-md-baseline border-top border-secondary">
+            <p class="pt-2 sm-txt">Copyright© 2021. All Rights Reserved. Designed by Mohammed Awad. Developed by Carlos Osorio</p>
             <ul class="social list-group list-group-horizontal list-unstyled">
                 <li class="display-6"><a href="#"><i class="small footer-icon fab fa-facebook-square pink"></i></a></li>
                 <li class="ms-2 display-6"><a href="#"><i class="small footer-icon fab fa-twitter pink"></i></a></li>
