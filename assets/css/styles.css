@@ -40,8 +40,8 @@
 }
 
 /* Inheritance */
-.item-prev, .footer-nav,
-.copyright {
+.carousel-container, .item-prev, .footer-nav,
+.copyright, .search-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +113,10 @@ body {
 /* Header ========================= */
 header {
   background-color: #d35266;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 header .navbar img {
@@ -123,8 +127,14 @@ header .navbar li {
   margin: 0 10px;
 }
 
+header .searchbar {
+  width: 200px;
+  margin: auto;
+}
+
 /* Hots ads ===================== */
 #carouselHotAds {
+  margin-top: 114px;
   background-color: #fff;
 }
 
@@ -146,6 +156,23 @@ footer {
 footer h4 {
   text-align: center;
   border-bottom: #d35266 solid 2px;
+}
+
+/* checklist ================== */
+#checklist {
+  margin-top: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#checklist .item-prop {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {

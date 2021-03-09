@@ -1,0 +1,16 @@
+/* checklist ================== */
+
+#checklist {
+    margin-top: 114px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item-prop {
+        flex: 1 1 150px;
+        margin: 0 auto;
+    }    
+}
+
+.search-product {
+    @extend %flex-column;
+}

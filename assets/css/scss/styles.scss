@@ -94,7 +94,11 @@ body {
 /* Header ========================= */
 
 header {
-    background-color: $maincolor;   
+    background-color: $maincolor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 
     .navbar {
         img{
@@ -103,14 +107,24 @@ header {
 
         li {
             margin: 0 10px;
-        }
+        }        
+    }
+
+    .searchbar {
+        width: 200px;
+        margin: auto;
     }
 }
 
 /* Hots ads ===================== */
 
 #carouselHotAds {
+    margin-top: 114px;
     background-color: #fff;
+}
+
+.carousel-container {
+    @extend %flex-column;
 }
 
 .hotAds-img {
@@ -141,4 +155,5 @@ footer {
     @extend %flex-column;
 }
 
+@import 'search';
 @import 'queries';
