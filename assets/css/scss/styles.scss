@@ -91,6 +91,8 @@ body {
     background-color: $maincolor;
 }
 
+/* Header ========================= */
+
 header {
     background-color: $maincolor;   
 
@@ -120,6 +122,22 @@ header {
 .item-prev {
     border: $light-dark solid 1px;
     background-color: #fff;
+    @extend %flex-column;
+}
+
+/* Footer ================ */
+
+footer {
+    background-color: #fff;
+
+    h4 {       
+        text-align: center;
+        border-bottom: $maincolor solid 2px;
+    }
+}
+
+.footer-nav,
+.copyright {
     @extend %flex-column;
 }
 

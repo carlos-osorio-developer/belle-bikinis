@@ -40,7 +40,8 @@
 }
 
 /* Inheritance */
-.item-prev {
+.item-prev, .footer-nav,
+.copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +110,7 @@ body {
   background-color: #d35266;
 }
 
+/* Header ========================= */
 header {
   background-color: #d35266;
 }
@@ -134,6 +136,16 @@ header .navbar li {
 .item-prev {
   border: #888888 solid 1px;
   background-color: #fff;
+}
+
+/* Footer ================ */
+footer {
+  background-color: #fff;
+}
+
+footer h4 {
+  text-align: center;
+  border-bottom: #d35266 solid 2px;
 }
 
 @media screen and (min-width: 768px) {
