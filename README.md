@@ -1,12 +1,16 @@
 # Project Name: Bella Bikinis Online Shop
 
-This is an online shop for Bella Bikinis, a brand for beach bikinis & dresses, which you can get directly from your home.
+Belle Bikinis is the front-end layout of an online shop for a bikinis and dresses store. It has two pages, the main page, and the search results page.
 
 ## Description
 
-The main page features a header with a navigation bar, a slider for the most popular items and three different sections for bikinis of 2 and 1 pieces, and beach dresses. 
+The main page features a section with a slider for the most popular items and three different sections for item categories. 
 
-It is based on HTML, CSS, SASS and Bootstrap.
+The search page features a section in which the user can select the categories or filters for their searches. Next to the other section which displays the search results.
+
+Both, main and search pages, have a header with navigation and search bar, and a footer with navigation, social icons, and copyright.
+
+This project is based on HTML, CSS, SASS, and Bootstrap.
 
 ## Built With
 
@@ -16,8 +20,22 @@ It is based on HTML, CSS, SASS and Bootstrap.
 
 ## Screenshots
 
+### Index page
 - Mobile view
 ![Mobile](./assets/img/screenshot-mobile.png)
+
+- Tablet view
+![Mobile](./assets/img/screenshot-tablet.png)
+
+- Desktop view
+![Mobile](./assets/img/screenshot-desktop.png)
+
+### Search page
+- Mobile view 
+![Mobile](./assets/img/screenshot-mobile-search.png)
+
+- Tablet and desktop view 
+![Mobile](./assets/img/screenshot-desktop-search.png)
 
 ## Live Demo
 
