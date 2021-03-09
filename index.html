@@ -15,25 +15,33 @@
             <a href="./index.html"><img src="./assets/img/logowhite.png" alt="white logo"></a>
             <div class="d-flex justify-content-between ps-3 full-width">
                 <ul class="navbar-nav list-unstyled list-group-horizontal align-items-center">
-                    <li class="nav-link active"><a href="#" class="text-muted"><i class="fas fa-home"></i><span class="d-none d-sm-inline"> HOME</span></a></li>
+                    <li class="nav-link active"><a href="./index.html" class="text-muted"><i class="fas fa-home"></i><span class="d-none d-sm-inline"> HOME</span></a></li>
                     <li class="nav-link"><a href="#" class="text-muted"><i class="fa fa-archive"></i><span class="d-none d-sm-inline"> COLLECTIONS</span></a></li>
                     <li class="nav-link"><a href="#" class="text-muted"><i class="fas fa-shopping-cart"></i><span class="d-none d-sm-inline"> PURCHASE LIST</span></a></li>
-
+                    
                 </ul>
                 <ul class="d-none d-md-flex navbar-nav list-unstyled list-group-horizontal align-items-center">
-                    <button type="button" class="btn btn-primary pink-bg border-0">POST AND AD</button>
+                    <li class="nav-link d-none d-lg-block"><button type="button" class="btn btn-danger pink-bg border-0">POST AND AD</button></li>
                     <li class="nav-link position-relative"><a href="#" class="text-muted"><i class="far fa-envelope xl-txt"></i><span class="position-absolute top-0 start-50 badge rounded-circle bg-danger">3</span></a></li>
                     <li class="nav-link"><a href="#" class="text-muted">John Doe <img src="./assets/img/user.jpg" alt="John Doe" class="rounded-circle"></a></li>
                 </ul>
             </div>
         </nav>
+        <section id="search">
+            <li class="nav-link">
+                <div class="input-group searchbar">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="User's search" aria-describedby="button-search" col="5">
+                    <a href="./search.html" class="btn btn-secondary" type="button" id="button-search"><i class="fas fa-search"></i></a>
+                </div>
+            </li>
+        </section>
     </header>
     <main>
         <section id="carouselHotAds" class="carousel slide container-fluid p-4" data-bs-ride="carousel">
             <h1 class="text-muted">Hot Ads</h1>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="carousel-container">
                         <a href="#"><img src="./assets/img/item4.jpg" class="d-block hotAds-img" alt="red bikini"></a>
                         <a href="#"><h2 class="pink">Maaji Mango Frisky Single Strap Bikini</h2></a>
                         <p>WOMENS BIKINI TWO PIECES 79% POLYAMIDE 21% SPANDEX KNIT</p>
@@ -46,7 +54,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="carousel-container">
                         <a href="#"><img src="./assets/img/body4.jpg" class="d-block hotAds-img" alt="pink body"></a>
                         <a href="#"><h2 class="pink">Tropik SOLID TEXTURE Open Back One-piece Swimsuit</h2></a>
                         <p>WOMENS BOTTOM SWIMWEAR ONE PIECE 69% POLYAMIDE 45% SPANDEX</p>
@@ -59,7 +67,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="carousel-container">
                         <a href="#"><img src="./assets/img/item1.jpg" class="d-block hotAds-img" alt="black bikini"></a>
                         <a href="#"><h2 class="pink">Billabong BEYOND THE PALMS Reversible Bralette Bikini Top</h2></a>
                         <p>Integrated pads V-neckline TWO PIECES 78% Polyamide 22% Elastane</p>
@@ -88,8 +96,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">Billabong BEYOND THE PALMS Reversible Bralette Bikini Top</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">75.95$</p>
                 </div>
             </div>
@@ -98,8 +113,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">Turquoise Couture LEOPARD D Cup Push-up Bikini Top</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">42.90$</p>
                 </div>
             </div>
@@ -108,8 +130,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">Eidon CORINDI Kali D Cup Triangle Bikini Top</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Mexico.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">55.55$</p>
                 </div>
             </div>
@@ -118,8 +147,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">Billabong SOL SEARCHER Twisted Bralette Bikini Top</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">65.25$</p>
                 </div>
             </div>
@@ -128,8 +164,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">MyBikiniStory Zipper Bralette Bikini Top</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">45.95$</p>
                 </div>
             </div>
@@ -141,8 +184,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">BLEU ROD BEATTIE TWIST & SHOUT Twisted Front One-piece Swimsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">85.95$</p>
                 </div>
             </div>
@@ -151,8 +201,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">MIRACLESUIT LUXOR Escape One-piece Swimsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">92.90$</p>
                 </div>
             </div>
@@ -161,8 +218,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">TROPIK SOLID TEXTURE Open Back One-piece Swimsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Mexico.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">75.75$</p>
                 </div>
             </div>
@@ -171,8 +235,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">BILLABONG WILD WAVES One-piece Swimsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">69.95$</p>
                 </div>
             </div>
@@ -182,8 +253,15 @@
                     ANNE COLE POLYNESIAN PALM Dress One-piece Swimsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">95$</p>
                 </div>
             </div>
@@ -195,8 +273,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">TURQUOISE COUTURE INDIANA Dress</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">95.95$</p>
                 </div>
             </div>
@@ -205,8 +290,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">O'NEILL SALTWATER Short Dress</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">72.90$</p>
                 </div>
             </div>
@@ -215,8 +307,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">TROPIK Striped Kimono</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Mexico.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">55.55$</p>
                 </div>
             </div>
@@ -225,8 +324,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">RIP CURL SOL Jumpsuit</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>U.S.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">69.28$</p>
                 </div>
             </div>
@@ -235,8 +341,15 @@
               <a href="#" class="text-dark"><h3 class="py-2">TURQUOISE COUTURE Ribbed Long Sleeve Dress</h3></a>
                 <strong class="pink align-self-start">New</strong>
                 <p class="text-muted align-self-start"><span class="strong-txt">Location: </span>Japan.</p>
-                <div class="container-fluid">
-                    <i class="far fa-plus-square xxl-txt float-start"></i>
+                <div class="d-flex justify-content-between align-items-center container-fluid">
+                    <div class="btn-group dropup">
+                        <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-plus-square xxl-txt"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                            <li><a class="dropdown-item" href="#">Send a Message</a></li>
+                            <li><a class="dropdown-item" href="#">More Details</a></li>
+                        </ul>
+                    </div>
                     <p class="pink text-end pt-2">68.45$</p>
                 </div>
             </div>
