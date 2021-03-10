@@ -51,10 +51,10 @@ From your command line, first clone the project:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/carlos-osorio-developer/Education-FundaReserva
+$ git clone https://github.com/carlos-osorio-developer/belle-bikinis
 
 # Go into the repository
-$ cd Education-FundaReserva
+$ cd belle-bikinis
 
 # Open the project on Vscode
 $ code .
