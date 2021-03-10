@@ -3,11 +3,11 @@
 #checklist {
   display: flex;
   flex-wrap: wrap;
+}
 
-  .item-prop {
-    flex: 1 1 150px;
-    margin: 0 auto;
-  }
+.item-prop {
+  flex: 1 1 150px;
+  margin: 0 auto;
 }
 
 /* items-list ================== */
