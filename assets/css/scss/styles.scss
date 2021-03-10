@@ -1,7 +1,10 @@
+@import 'queries';
+@import 'search';
+
 /* Variables */
 
 $maincolor: #d35266;
-$light-dark: #888888;
+$light-dark: #888;
 $black-dark: #383838;
 $mainfont-bold: "GothamBold";
 $mainfont-light: "GothamLight";
@@ -12,13 +15,10 @@ $secondfont-medium: "HelveticaNeueMedium";
 // Fonts
 
 @mixin font-face($font-family) {
-    @font-face {
-        font-family: $font-family;
-        src: url(../fonts/#{$font-family}.otf);
-        font-weight: normal;
-        font-style: normal;
-        display: swap;
-    }
+  @font-face {
+    font-family: $font-family;
+    src: url(../fonts/#{$font-family}.otf);
+  }
 }
 
 @include font-face($mainfont-bold);
@@ -30,165 +30,181 @@ $secondfont-medium: "HelveticaNeueMedium";
 /* Inheritance */
 
 %flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* General styles */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .sm-txt {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .xl-txt {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .xxl-txt {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h1 {
-    font-family: $mainfont-bold;
+  font-family: $mainfont-bold, sans-serif;
 }
 
 h2 {
-    font-family: $mainfont-light;
+  font-family: $mainfont-light, sans-serif;
 }
 
 .strong-txt {
-    font-family: $secondfont-bold;
-    color: $black-dark;
+  font-family: $secondfont-bold, sans-serif;
+  color: $black-dark;
 }
 
 body {
-    font-family: $secondfont-medium;
-    color: $black-dark;
-    background-color: #e0e0e0;
+  font-family: $secondfont-medium, sans-serif;
+  color: $black-dark;
+  background-color: #e0e0e0;
 }
 
 .blackdarkbg {
-    background-color: $black-dark;
-    height: 60px;    
+  background-color: $black-dark;
+  height: 60px;
 }
 
 .pink {
-    color: $maincolor;
+  color: $maincolor;
+}
+
+.pink:hover {
+  color: #d62741;
 }
 
 .pink-bg {
-    background-color: $maincolor;
+  background-color: $maincolor;
 }
 
 /* Header ========================= */
 
 header {
-    background-color: $maincolor;
+  width: 100%;
+
+  .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 10;
+    z-index: 2222;
 
-    .navbar {
-        img{
-            width: 50px;
-        }
-
-        li {
-            margin: 0 10px;
-        }        
+    img {
+      width: 50px;
     }
 
-    .searchbar {
-        width: 200px;
-        margin: 0 5px;
+    li {
+      margin: 0 10px;
     }
+  }
 
-    .text-muted:hover {
-        color: rgb(238, 238, 238)!important;
-    }    
+  .text-muted:hover {
+    color: rgb(238, 238, 238) !important;
+  }
+}
+
+#slogan {
+  background-color: $maincolor;
+  margin-top: 60px;
+}
+
+/* Search bar ===================== */
+
+#search {
+  background-color: $maincolor;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  z-index: 2222;
+}
+
+.searchbar {
+  width: 200px;
+  margin: 0 5px;
 }
 
 /* Hots ads ===================== */
 
 #carouselHotAds {
-    margin-top: 114px;
-    background-color: #fff;
-
-    .pink:hover {
-        color: #d62741;
-    }
+  background-color: #fff;
 }
 
 .carousel-button {
-    width: auto;
+  width: auto;
 }
 
 .carousel-container {
-    @extend %flex-column;
+  @extend %flex-column;
 }
 
 .hotAds-img {
-    width: 300px;
+  width: 300px;
 }
 
 /* Items categories ================ */
 
 .text-dark h3:hover {
-    color:#808080;
+  color: #808080;
 }
 
 .item-prev {
-    border: $light-dark solid 1px;
-    background-color: #fff;
-    @extend %flex-column;
-    justify-content: space-between;
+  border: $light-dark solid 1px;
+  background-color: #fff;
+
+  @extend %flex-column;
+
+  justify-content: space-between;
 }
 
 .dropdown-item:hover {
-    background-color: #333333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+}
+
+.dropup .dropdown-toggle::after {
+  display: none;
 }
 
 /* Footer ================ */
 
 footer {
-    background-color: #fff;
+  background-color: #fff;
 
-    h4 {       
-        text-align: center;
-        border-bottom: $maincolor solid 2px;
-    }
-
-    .pink:hover {
-        color: #d62741;
-    }
+  h4 {
+    text-align: center;
+    border-bottom: $maincolor solid 2px;
+  }
 }
 
 .user-options-item {
-    width: 150px;
+  width: 150px;
 }
 
 .footer-nav,
 .copyright {
-    @extend %flex-column;
+  @extend %flex-column;
 }
 
 .user-options {
-    @extend %flex-column;
-    height: 200px;
-}
+  @extend %flex-column;
 
-@import 'search';
-@import 'queries';
+  height: 300px;
+}

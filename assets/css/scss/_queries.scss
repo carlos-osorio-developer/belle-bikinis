@@ -1,55 +1,52 @@
-@media screen and (min-width: 576px) {
-    #carouselHotAds {
-        margin-top: 192px;
-    }
-
-    #checklist {
-        margin-top: 192px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    #items-list {
-        margin-top: 192px;
-        border-left: 1px solid;
-    }
+  #items-list {
+    border-left: 1px solid;
+  }
 
-    #checklist {
-        .item-prop {
-            flex: 0 0 auto;
-            margin: 0 10px;
-        }  
+  #checklist {
+    .item-prop {
+      flex: 0 0 auto;
+      margin: 0 10px;
     }
+  }
 
-    .full-width {
-        width:100%;
-    }    
+  .full-width {
+    width: 100%;
+  }
 
-    .hotAds-img {
-        width: 400px;
+  .hotAds-img {
+    width: 400px;
+  }
+
+  .carousel-img {
+    width: 400px;
+
+    img {
+      width: 400px;
     }
+  }
 
-    .item-prev {
-        flex: 1 0 45%;
-    }
+  .item-prev {
+    flex: 1 0 45%;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .item-prev {
-        flex: 1 0 23%;
+  .item-prev {
+    flex: 1 0 23%;
 
-        h3 {
-            font-size: 20px;
-        }
+    h3 {
+      font-size: 20px;
     }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .item-prev {
-        flex: 1 0 18%;
+  .item-prev {
+    flex: 1 0 18%;
 
-        h3 {
-            font-size: 20px;
-        }
+    h3 {
+      font-size: 20px;
     }
+  }
 }

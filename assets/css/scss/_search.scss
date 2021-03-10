@@ -1,27 +1,26 @@
 /* checklist ================== */
 
 #checklist {
-    margin-top: 114px;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    .item-prop {
-        flex: 1 1 150px;
-        margin: 0 auto;
-    }    
+  .item-prop {
+    flex: 1 1 150px;
+    margin: 0 auto;
+  }
 }
 
 /* items-list ================== */
 
 .search-product {
-    @extend %flex-column;   
-    
-    .pink:hover {
-        color: #d62741;
-    }
+  @extend %flex-column;
 }
 
-.hotAds-img {
-    max-width: 300px;
-    width: 90%;
+.carousel-img {
+  max-width: 300px;
+  width: 90%;
+
+  img {
+    width: 100%;
+  }
 }
