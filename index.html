@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -26,25 +25,27 @@
                     <li class="nav-link"><a href="#" class="text-muted">John Doe <img src="./assets/img/user.jpg" alt="John Doe" class="rounded-circle"></a></li>
                 </ul>
             </div>
-        </nav>
-        <section id="search">
-            <h1 class="d-none d-sm-block text-center text-light">Belle Bikinis</h1>
-            <p class="xl-txt d-none d-sm-block text-center text-light m-0">Be Comfortable In Your Skin</p>
-            <div class="navbar-nav list-group-horizontal py-2 d-flex justify-content-center">                
-                <select class="nav-item form-select d-none d-md-block searchbar" aria-label="Default select example">
-                    <option selected>All categories</option>
-                    <option value="1">Bikinis</option>
-                    <option value="2">Bodys</option>
-                    <option value="3">Dresses</option>
-                </select>
-                <input type="text" class="form-control d-none d-md-block searchbar" placeholder="Location" aria-label="User's search" aria-describedby="button-search" col="5">
-                <div class="nav-item input-group searchbar">
-                    <input type="text" class="form-control" placeholder="I'm searching for:" aria-label="User's search" aria-describedby="button-search" col="5">
-                    <a href="./search.html" class="btn btn-secondary" type="button" id="button-search"><span class="visually-hidden">Search Page</span><i class="fas fa-search"></i></a>
-                </div>
-            </div>
-        </section>
+        </nav>        
     </header>
+    <section id="slogan">
+        <h1 class="d-none d-sm-block pt-3 text-center text-light">Belle Bikinis</h1>
+        <p class="xl-txt d-none d-sm-block text-center text-light m-0">Be Comfortable In Your Skin</p>        
+    </section>
+    <section id="search">
+        <div class="navbar-nav list-group-horizontal py-2 d-flex justify-content-center">                
+            <select class="nav-item form-select d-none d-md-block searchbar" aria-label="Default select example">
+                <option selected>All categories</option>
+                <option value="1">Bikinis</option>
+                <option value="2">Bodys</option>
+                <option value="3">Dresses</option>
+            </select>
+            <input type="text" class="form-control d-none d-md-block searchbar" placeholder="Location" aria-label="User's search" aria-describedby="button-search" col="5">
+            <div class="nav-item input-group searchbar">
+                <input type="text" class="form-control" placeholder="I'm searching for:" aria-label="User's search" aria-describedby="button-search" col="5">
+                <a href="./search.html" class="btn btn-secondary" type="button" id="button-search"><span class="visually-hidden">Search Page</span><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </section>
     <main>
         <section id="carouselHotAds" class="carousel slide container-fluid p-4" data-bs-ride="carousel">
             <h1>Hot Ads</h1>
@@ -105,7 +106,7 @@
             </div>
         </section>
         <section id="Bikinis" class="m-4 mx-lg-2">
-            <h1>Two pieces bikinis</h1>
+            <h1 class="px-2">Two pieces bikinis</h1>
             <div class="d-md-flex flex-wrap justify-content-center">
                 <div class="item-prev m-2 p-3">
                 <a href="#"><img class="container-fluid p-0" src="./assets/img/item1.jpg" alt="black bikini"></a>
@@ -220,7 +221,7 @@
             </div>
         </section>
         <section id="Bodys" class="m-4 mx-lg-2">
-            <h1>One piece bodies</h1>
+            <h1 class="px-2">One piece bodies</h1>
             <div class="d-md-flex flex-wrap justify-content-center">
                 <div class="item-prev m-2 p-3">
                 <a href="#"><img class="container-fluid p-0" src="./assets/img/body1.jpg" alt="black bikini"></a>
@@ -320,7 +321,7 @@
             </div>
         </section>
         <section id="Beach Dresses" class="m-4 mx-lg-2">
-            <h1>Dresses for beach</h1>
+            <h1 class="px-2">Dresses for beach</h1>
             <div class="d-md-flex flex-wrap justify-content-center">
                 <div class="item-prev m-2 p-3">
                     <div id="CarouselDress" class="carousel slide">
