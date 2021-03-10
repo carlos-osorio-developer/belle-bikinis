@@ -225,7 +225,7 @@ header .text-muted:hover {
 
 .searchbar {
   width: 200px;
-  margin: 0 5px;
+  margin: 0;
 }
 
 /* Hots ads ===================== */
@@ -274,7 +274,7 @@ footer h4 {
 }
 
 .user-options-item {
-  width: 150px;
+  width: 111px;
 }
 
 .user-options {
