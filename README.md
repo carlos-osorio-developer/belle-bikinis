@@ -61,7 +61,7 @@ $ code .
 
 ```
 
-## Authors
+## Author
 
 👤 **Carlos Osorio**
 
