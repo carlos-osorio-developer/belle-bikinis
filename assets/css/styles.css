@@ -1,0 +1,279 @@
+@media screen and (min-width: 768px) {
+  #items-list {
+    border-left: 1px solid;
+  }
+
+  #checklist .item-prop {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0 10px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .hotAds-img {
+    width: 400px;
+  }
+
+  .carousel-img {
+    width: 400px;
+  }
+
+  .carousel-img img {
+    width: 400px;
+  }
+
+  .item-prev {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 45%;
+    flex: 1 0 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .item-prev {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 23%;
+    flex: 1 0 23%;
+  }
+
+  .item-prev h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-prev {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 18%;
+    flex: 1 0 18%;
+  }
+
+  .item-prev h3 {
+    font-size: 20px;
+  }
+}
+
+/* checklist ================== */
+#checklist {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.item-prop {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 150px;
+  flex: 1 1 150px;
+  margin: 0 auto;
+}
+
+/* items-list ================== */
+.carousel-img {
+  max-width: 250px;
+  width: 250px;
+  height: 250px;
+}
+
+/* Variables */
+@font-face {
+  font-family: "GothamBold";
+  src: url(../fonts/GothamBold.otf);
+}
+
+@font-face {
+  font-family: "GothamLight";
+  src: url(../fonts/GothamLight.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url(../fonts/HelveticaNeueBold.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url(../fonts/HelveticaNeueLight.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url(../fonts/HelveticaNeueMedium.otf);
+}
+
+/* Inheritance */
+.search-product,
+.carousel-container,
+.item-prev,
+.footer-nav,
+.copyright,
+.user-options {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sm-txt {
+  font-size: 12px;
+}
+
+.xl-txt {
+  font-size: 22px;
+}
+
+.xxl-txt {
+  font-size: 40px;
+}
+
+h1 {
+  font-family: "GothamBold", sans-serif;
+}
+
+h2 {
+  font-family: "GothamLight", sans-serif;
+}
+
+.strong-txt {
+  font-family: "HelveticaNeueBold", sans-serif;
+  color: #383838;
+}
+
+body {
+  font-family: "HelveticaNeueMedium", sans-serif;
+  color: #383838;
+  background-color: #e0e0e0;
+}
+
+.blackdarkbg {
+  background-color: #383838;
+  height: 60px;
+}
+
+.pink {
+  color: #d35266;
+}
+
+.pink:hover {
+  color: #d62741;
+}
+
+.pink-bg {
+  background-color: #d35266;
+}
+
+/* Header ========================= */
+header {
+  width: 100%;
+}
+
+header .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2222;
+}
+
+header .navbar img {
+  width: 50px;
+}
+
+header .navbar li {
+  margin: 0 10px;
+}
+
+header .text-muted:hover {
+  color: #eee !important;
+}
+
+#slogan {
+  background-color: #d35266;
+  margin-top: 60px;
+}
+
+/* Search bar ===================== */
+#search {
+  background-color: #d35266;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
+  z-index: 2222;
+}
+
+.searchbar {
+  width: 200px;
+  margin: 0;
+}
+
+/* Hots ads ===================== */
+#carouselHotAds {
+  background-color: #fff;
+}
+
+.carousel-button {
+  width: auto;
+}
+
+.hotAds-img {
+  width: 300px;
+}
+
+/* Items categories ================ */
+.text-dark h3:hover {
+  color: #808080;
+}
+
+.item-prev {
+  border: #888 solid 1px;
+  background-color: #fff;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.dropup .dropdown-toggle::after {
+  display: none;
+}
+
+/* Footer ================ */
+footer {
+  background-color: #fff;
+}
+
+footer h4 {
+  text-align: center;
+  border-bottom: #d35266 solid 2px;
+}
+
+.user-options-item {
+  width: 111px;
+}
+
+.user-options {
+  height: 300px;
+}

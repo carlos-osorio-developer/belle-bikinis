@@ -1,0 +1,23 @@
+/* checklist ================== */
+
+#checklist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-prop {
+  flex: 1 1 150px;
+  margin: 0 auto;
+}
+
+/* items-list ================== */
+
+.search-product {
+  @extend %flex-column;
+}
+
+.carousel-img {
+  max-width: 250px;
+  width: 250px;
+  height: 250px;
+}
