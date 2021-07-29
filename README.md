@@ -39,7 +39,7 @@ This project is based on HTML, CSS, SASS, and Bootstrap.
 
 ## Live Demo
 
-[Belle Bikinis website](https://carlos-osorio-developer.github.io/mv-week4-htmlcapstone/)
+[Belle Bikinis website](https://carlos-osorio-developer.github.io/belle-bikinis)
 
 # Getting Started 🚀
 
